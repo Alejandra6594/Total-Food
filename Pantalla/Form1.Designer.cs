@@ -127,6 +127,7 @@
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.TextImageRelation = TextImageRelation.ImageBeforeText;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // btnSolicitudes
             // 
@@ -164,6 +165,7 @@
             button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.TextImageRelation = TextImageRelation.ImageBeforeText;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -212,6 +214,7 @@
             panelChildForm.Name = "panelChildForm";
             panelChildForm.Size = new Size(684, 561);
             panelChildForm.TabIndex = 1;
+            panelChildForm.Paint += panelChildForm_Paint;
             // 
             // Form1
             // 
@@ -224,6 +227,7 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += Form1_Load;
             panelSideMenu.ResumeLayout(false);
             panelSolicitudes.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
