@@ -32,32 +32,73 @@ namespace Pantalla
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            // Cierra el Formulario1 si está abierto
+            foreach (Form form in panelChildForm.Controls)
+            {
+                if (form is Productos)
+                {
+                    form.Close();
+                    break;
+                }
+                if (form is Pedidos)
+                {
+                    form.Close();
+                    break;
+                }
+                if (form is Historial)
+                {
+                    form.Close();
+                    break;
+                }
+            }
+
+
+            // Crea una instancia del formulario2
             Perfil Perfil = new Perfil();
+            
+
+            // Establece las propiedades necesarias para mostrar el formulario en el panel contenedor
             Perfil.TopLevel = false;
             Perfil.Dock = DockStyle.Fill;
-            Perfil.FormBorderStyle = FormBorderStyle.None;
 
-            // Agregar el formulario al panel
+            // Agrega el formulario al panel contenedor y lo muestra
             panelChildForm.Controls.Add(Perfil);
-
-            // Mostrar el formulario dentro del panel
             Perfil.Show();
-            
+
+
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            
+            // Cierra el Formulario1 si está abierto
+            foreach (Form form in panelChildForm.Controls)
+            {
+                if (form is Productos)
+                {
+                    form.Close();
+                    break;
+                }
+                if (form is Pedidos)
+                {
+                    form.Close();
+                    break;
+                }
+                if (form is Perfil)
+                {
+                    form.Close();
+                    break;
+                }
+            }
             Historial Historial = new Historial();
             Historial.TopLevel = false;
             Historial.Dock = DockStyle.Fill;
-            Historial.FormBorderStyle = FormBorderStyle.None;
 
-            // Agregar el formulario al panel
+            // Agrega el formulario al panel contenedor y lo muestra
             panelChildForm.Controls.Add(Historial);
-
-            // Mostrar el formulario dentro del panel
             Historial.Show();
-          
+
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -82,29 +123,59 @@ namespace Pantalla
 
         private void button2_Click(object sender, EventArgs e)
         {
+            foreach (Form form in panelChildForm.Controls)
+            {
+                if (form is Historial)
+                {
+                    form.Close();
+                    break;
+                }
+                if (form is Pedidos)
+                {
+                    form.Close();
+                    break;
+                }
+                if (form is Perfil)
+                {
+                    form.Close();
+                    break;
+                }
+            }
             Productos Productos = new Productos();
             Productos.TopLevel = false;
             Productos.Dock = DockStyle.Fill;
-            Productos.FormBorderStyle = FormBorderStyle.None;
 
-            // Agregar el formulario al panel
+            // Agrega el formulario al panel contenedor y lo muestra
             panelChildForm.Controls.Add(Productos);
-
-            // Mostrar el formulario dentro del panel
             Productos.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            foreach (Form form in panelChildForm.Controls)
+            {
+                if (form is Historial)
+                {
+                    form.Close();
+                    break;
+                }
+                if (form is Productos)
+                {
+                    form.Close();
+                    break;
+                }
+                if (form is Perfil)
+                {
+                    form.Close();
+                    break;
+                }
+            }
             Pedidos Pedidos = new Pedidos();
             Pedidos.TopLevel = false;
             Pedidos.Dock = DockStyle.Fill;
-            Pedidos.FormBorderStyle = FormBorderStyle.None;
 
-            // Agregar el formulario al panel
+            // Agrega el formulario al panel contenedor y lo muestra
             panelChildForm.Controls.Add(Pedidos);
-
-            // Mostrar el formulario dentro del panel
             Pedidos.Show();
         }
     }
