@@ -39,16 +39,25 @@ namespace Pantalla
                 if (form is Productos)
                 {
                     form.Close();
+                    form.Dispose();
                     break;
                 }
                 if (form is Pedidos)
                 {
                     form.Close();
+                    form.Dispose();
                     break;
                 }
                 if (form is Historial)
                 {
                     form.Close();
+                    form.Dispose();
+                    break;
+                }
+                if (form is Perfil)
+                {
+                    form.Close();
+                    form.Dispose();
                     break;
                 }
             }
@@ -78,16 +87,25 @@ namespace Pantalla
                 if (form is Productos)
                 {
                     form.Close();
+                    form.Dispose();
                     break;
                 }
                 if (form is Pedidos)
                 {
                     form.Close();
+                    form.Dispose();
                     break;
                 }
                 if (form is Perfil)
                 {
                     form.Close();
+                    form.Dispose();
+                    break;
+                }
+                if (form is Historial)
+                {
+                    form.Close();
+                    form.Dispose();
                     break;
                 }
             }
@@ -128,16 +146,25 @@ namespace Pantalla
                 if (form is Historial)
                 {
                     form.Close();
+                    form.Dispose();
                     break;
                 }
                 if (form is Pedidos)
                 {
                     form.Close();
+                    form.Dispose();
                     break;
                 }
                 if (form is Perfil)
                 {
                     form.Close();
+                    form.Dispose();
+                    break;
+                }
+                if (form is Productos)
+                {
+                    form.Close();
+                    form.Dispose();
                     break;
                 }
             }
@@ -157,16 +184,25 @@ namespace Pantalla
                 if (form is Historial)
                 {
                     form.Close();
+                    form.Dispose();
                     break;
                 }
                 if (form is Productos)
                 {
                     form.Close();
+                    form.Dispose();
                     break;
                 }
                 if (form is Perfil)
                 {
                     form.Close();
+                    form.Dispose();
+                    break;
+                }
+                if (form is Pedidos)
+                {
+                    form.Close();
+                    form.Dispose();
                     break;
                 }
             }

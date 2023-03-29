@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pantalla
 {
-    public partial class Perfil : Form
+    public partial class Form2 : Form
     {
-        public Perfil()
+        public Form2()
         {
             InitializeComponent();
         }
@@ -27,20 +27,24 @@ namespace Pantalla
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Form2 Form2 = new Form2();
-            Form2.TopLevel = false;
-            Form2.Dock = DockStyle.Fill;
-
-            // Agrega el formulario al panel contenedor y lo muestra
-            panelEdit.Controls.Add(Form2);
-            Form2.Show();
+            
         }
     }
 }
